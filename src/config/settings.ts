@@ -1,0 +1,25 @@
+// Central settings for visuals, movement, and the player lantern.
+export const SETTINGS = {
+  sceneBackground: "#000000",
+  fogColor: "#000000",
+  fogNear: 3,
+  fogFar: 12,
+  pageBackground: "#333333",
+  asciiForeground: "#cccccc",
+  asciiResolution: 0.20,
+  asciiCharacters: " .,:;i1tfLCG08@",
+  minimumBrightness: 0,
+  maximumBrightness: 1,
+  brightnessGamma: 1.2,
+  brightnessSteps: 16,
+  eyeHeight: 1.65,
+  moveSpeed: 3.7,
+  interactionDistance: 3,
+  lantern: {
+    startsOn: true,
+    radius: 6,
+    intensity: 0.2,
+    toggleKey: "KeyL",
+    wallOcclusion: true,
+  },
+} as const;
