@@ -57,7 +57,7 @@ export default function App() {
   const [file, setFile] = useState<WorldFile>(),
     [error, setError] = useState(""),
     [selected, setSelected] = useState<LandmarkFile>(),
-    [lanternOn, setLanternOn] = useState(SETTINGS.lantern.startsOn),
+    [lanternOn, setLanternOn] = useState<boolean>(SETTINGS.lantern.startsOn),
     [player, setPlayer] = useState<PlayerGridPosition>({ gx: 0, gz: 0 });
   useEffect(() => {
     document.documentElement.style.setProperty(

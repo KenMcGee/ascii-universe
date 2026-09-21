@@ -2,8 +2,8 @@
 export const SETTINGS = {
   sceneBackground: "#000000",
   fogColor: "#000000",
-  fogNear: 3,
-  fogFar: 12,
+  fogNear: 5,
+  fogFar: 18,
   pageBackground: "#333333",
   asciiForeground: "#cccccc",
   asciiResolution: 0.20,

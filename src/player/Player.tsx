@@ -16,7 +16,7 @@ export function Player({
   const { camera } = useThree(),
     keys = useRef<Record<string, boolean>>({}),
     feetY = useRef(world.spawn[1] - SETTINGS.eyeHeight),
-    active = useRef<Cell>(),
+    active = useRef<Cell | undefined>(undefined),
     lastGrid = useRef("");
   const forward = useMemo(() => new THREE.Vector3(), []),
     right = useMemo(() => new THREE.Vector3(), []),
